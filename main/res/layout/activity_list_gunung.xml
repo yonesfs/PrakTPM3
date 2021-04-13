@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@color/teal_200"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    app:cardUseCompatPadding="true">
+    tools:context=".activity_list_gunung">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mountain_image"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/mountain_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/mountain_summary"
+                android:maxLines="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPreview"
+                    style="@color/teal_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="PREVIEW"
+                    android:textSize="12sp"
+                    app:iconSize="18sp"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_baseline_visibility_24"
+                    app:iconTint="@null"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShare"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="SHARE"
+                    android:textSize="12sp"
+                    app:iconSize="18sp"
+                    android:textColor="@color/black"
+                    app:backgroundTint="@color/teal_700"
+                    app:icon="@drawable/ic_baseline_share_24"
+                    app:iconTint="@color/teal_200"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
